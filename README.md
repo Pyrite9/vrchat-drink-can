@@ -101,7 +101,7 @@ Drop the prefab into any humanoid avatar — it fits the hand at build time.
 
 ## Requirements. / 動作環境 / 필요한 것
 
-PC only · Unity 2022.3 · VRChat SDK Avatars 3.10+ · Modular Avatar (NDMF) · lilToon 2.x · humanoid avatar  
+Unity 2022.3 · VRChat SDK Avatars 3.10+ · Modular Avatar (NDMF) · lilToon 2.x · humanoid avatar  
 Tested: Unity 2022.3.22f1 / VRChat SDK 3.10.5 / Modular Avatar 1.18.7 / NDMF 1.14.8 / lilToon 2.3.4, 2.4.1  
 The inspector checks GitHub (`api.github.com`) for the latest version once a day; nothing is sent. · インスペクターは 1 日 1 回 GitHub で最新版を確認します（送信する情報はありません）· 인스펙터는 하루 한 번 GitHub에서 최신 버전을 확인합니다(보내는 정보 없음)
 

@@ -20,7 +20,7 @@ English: `README_en.md` / 한국어: `README_ko.md` / 利用規約: `LICENSE.txt
 
 ## 必要なもの
 
-- Unity 2022.3（VRChat）、**PC 専用**（Android / Quest 非対応）
+- Unity 2022.3（VRChat）
 - VRChat SDK – Avatars 3.10 以降
 - Modular Avatar
 - NDMF（Non-Destructive Modular Framework）

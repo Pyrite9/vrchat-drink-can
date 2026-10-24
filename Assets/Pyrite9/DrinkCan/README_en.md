@@ -20,7 +20,7 @@ Take it out, open the tab, drink it sip by sip and throw the empty can away.
 
 ## Requirements
 
-- Unity 2022.3 (VRChat), **PC only** (not for Android / Quest)
+- Unity 2022.3 (VRChat)
 - VRChat SDK – Avatars 3.10 or later
 - Modular Avatar
 - NDMF (Non-Destructive Modular Framework)
