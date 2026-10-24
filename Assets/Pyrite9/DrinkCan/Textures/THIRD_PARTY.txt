@@ -1,0 +1,5 @@
+DrinkCan_AluSmooth_A.png — derived from "Metal 050 A" by ambientCG (https://ambientcg.com/a/Metal050A)
+DrinkCan_AluSmooth_B.png — derived from "Metal 050 B" by ambientCG (https://ambientcg.com/a/Metal050B)
+Both licensed under Creative Commons CC0 1.0 Universal (https://docs.ambientcg.com/license/).
+Smoothness = 1 - roughness.
+DrinkCan_AluSmooth_B2.png — "Metal 050 B" smoothness with the smudge contrast raised x3 (0.93 - (r - mean) * 3).

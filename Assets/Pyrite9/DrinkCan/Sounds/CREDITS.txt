@@ -1,0 +1,12 @@
+Pyrite9 Drink Can — sound credits
+
+All three sounds are trimmed, faded and level-matched (mono, 48 kHz) from Freesound recordings
+released under Creative Commons 0 (CC0 1.0 Universal, http://creativecommons.org/publicdomain/zero/1.0/).
+Credit is not required by the license; it is given here with thanks.
+
+DrinkCan_Open.wav — "Opening Can with fizz - Soda / Beer / Pop" by MutilatorBCB
+  https://freesound.org/people/MutilatorBCB/sounds/689705/  (0.48-2.10 s)
+DrinkCan_Gulp.wav — "Drink_Gulp.mp3" by Defaultv
+  https://freesound.org/people/Defaultv/sounds/534336/  (0.37-0.80 s, +25 dB)
+DrinkCan_Drop.wav — "Dropping Empty Soda Can" by Kraftaggregat
+  https://freesound.org/people/Kraftaggregat/sounds/735891/  (0.02-1.20 s, first of five drops)

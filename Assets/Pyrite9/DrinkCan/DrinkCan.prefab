@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8932567593909763729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9203509046300744835}
+  - component: {fileID: 5959762540370539525}
+  m_Layer: 0
+  m_Name: DrinkCan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9203509046300744835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932567593909763729}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5959762540370539525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932567593909763729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2264ff51d1234fd45b356817e77dfa53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizePreset: 0
+  heightMm: 122
+  diameterMm: 66
+  labelTexture: {fileID: 2800000, guid: d6424b0cc739a684c94cd1de0b37977e, type: 3}
+  labelFit: 0
+  liquidColor: {r: 0.8, g: 0.5, b: 0.12, a: 1}
+  sips: 6
+  hand: 0
+  sizeScale: 1
+  gripOffset: {x: 0, y: 0, z: 0}
+  gripTwist: 0
+  metalMaterial: {fileID: 2100000, guid: a9e56c3efa43f7442b1b4f32d3ee6a5d, type: 2}
+  labelMaterial: {fileID: 2100000, guid: aa8eee47ec9ddd24f835c8d61c6e93dc, type: 2}
+  liquidMaterial: {fileID: 2100000, guid: 309de5f18feea4546962a1a49b46f593, type: 2}
+  _lastPreset: 0

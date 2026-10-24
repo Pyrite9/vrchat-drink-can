@@ -1,0 +1,234 @@
+/* Pyrite9 Drink Can — DrinkCan 인스펙터 (디자인 'Assay', 휠체어 WheelchairInspector.uss를 옮기고 접두만 wc- → dc-)
+   바탕 #15171C · 글자 #E6E8EC · 라벨 #9AA0AD · 흐림 #7D8391 · 섹션 제목 #C9CDD5
+   테두리 #2E323C · 구분선 #23262E · 칸 바탕 #1C1F26 · 선택 바탕 #2A2618 · 금색 #E2CE74 · 바뀐 칸 테두리 #4A4226 */
+
+.dc-root {
+    background-color: #15171C;
+    color: #E6E8EC;
+    margin: 0 -6px 4px -15px;
+    padding-bottom: 14px;
+    font-size: 14px;
+}
+
+/* 머리 */
+.dc-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 16px 16px 12px 16px;
+    border-bottom-width: 1px;
+    border-bottom-color: #E2CE74;
+}
+.dc-header__left { flex-direction: row; align-items: center; }
+.dc-glyph { width: 34px; height: 34px; margin-right: 12px; flex-shrink: 0; }
+.dc-header__titles { flex-direction: column; }
+.dc-kicker { font-size: 12px; letter-spacing: 3px; color: #9AA0AD; padding: 0; margin: 0 0 1px 0; }
+.dc-title { font-size: 20px; -unity-font-style: bold; color: #E6E8EC; padding: 0; margin: 0; }
+.dc-versionbox { flex-direction: column; align-items: flex-end; }
+.dc-version { font-size: 13px; color: #9AA0AD; padding: 0; margin: 0; }
+.dc-version:hover { color: #E6E8EC; }
+.dc-update { font-size: 12px; color: #7D8391; padding: 0; margin: 2px 0 1px 0; }
+.dc-update--new { color: #15171C; background-color: #E2CE74; border-radius: 2px; padding: 1px 5px; -unity-font-style: bold; }
+.dc-update--new:hover { background-color: #FFE7A0; }
+
+/* 몸통·섹션 */
+.dc-body { padding: 14px 16px 0 16px; }
+.dc-section { flex-direction: column; }
+.dc-section__head { flex-direction: row; align-items: center; margin-bottom: 8px; }
+.dc-section__num { font-size: 12px; color: #E2CE74; padding: 0; margin: 0 10px 0 0; }
+.dc-section__title { flex-grow: 1; font-size: 13px; -unity-font-style: bold; letter-spacing: 1.5px; color: #C9CDD5; padding: 0; margin: 0; }
+.dc-section__meta { font-size: 12px; color: #7D8391; padding: 0; margin: 0; }
+.dc-divider { height: 1px; background-color: #23262E; margin: 12px 0; }
+
+.dc-rows { flex-direction: column; }
+.dc-row { flex-direction: row; align-items: center; min-height: 32px; margin-bottom: 4px; }
+.dc-label { width: 140px; flex-shrink: 0; color: #9AA0AD; padding: 0; margin: 0; -unity-text-align: middle-left; }
+.dc-row__control { flex-grow: 1; }
+
+/* 버튼 묶음(언어·손·크기·라벨 맞춤) */
+.dc-seg {
+    flex-direction: row;
+    border-width: 1px;
+    border-color: #2E323C;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 26px;
+}
+.dc-seg__item {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-left-width: 1px;
+    border-color: #2E323C;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: #9AA0AD;
+    font-size: 14px;
+}
+.dc-seg__item--first { border-left-width: 0; }
+.dc-seg__item:hover { background-color: #1C1F26; color: #E6E8EC; }
+.dc-seg__item--on, .dc-seg__item--on:hover { background-color: #2A2618; color: #E2CE74; -unity-font-style: bold; }
+
+/* 체크 */
+.dc-check { flex-direction: row; align-items: center; }
+.dc-toggle { margin: 0 8px 0 0; }
+.dc-toggle .unity-toggle__checkmark {
+    width: 16px;
+    height: 16px;
+    background-color: #1C1F26;
+    border-width: 1px;
+    border-color: #2E323C;
+    border-radius: 3px;
+    background-image: none;
+}
+.dc-toggle:checked .unity-toggle__checkmark,
+.dc-toggle .unity-toggle__input:checked > .unity-toggle__checkmark { background-color: #E2CE74; border-color: #E2CE74; background-image: none; }
+.dc-toggle:hover .unity-toggle__checkmark { border-color: #7D8391; }
+.dc-check__text { color: #C9CDD5; padding: 0; margin: 0; }
+
+/* 미세 조정 줄: 라벨 · 게이지 · 값 */
+.dc-offset { flex-direction: row; align-items: center; min-height: 32px; margin-bottom: 4px; }
+.dc-gauge { flex-grow: 1; height: 18px; margin: 0 10px 0 0; }
+.dc-gauge__track { position: absolute; left: 0; right: 0; top: 8px; height: 2px; background-color: #2E323C; }
+.dc-gauge__zero { position: absolute; left: 50%; top: 5px; width: 1px; height: 8px; background-color: #3A3F4B; }
+.dc-gauge__fill { position: absolute; top: 8px; height: 2px; background-color: #E2CE74; }
+.dc-gauge__knob {
+    position: absolute;
+    top: 4px;
+    width: 2px;
+    height: 10px;
+    margin-left: -1px;
+    background-color: #C9CDD5;
+}
+.dc-offset--on .dc-gauge__knob { background-color: #E2CE74; }
+.dc-offset--on .dc-label { color: #E6E8EC; }
+
+.dc-value { width: 80px; flex-shrink: 0; margin: 0; }
+.dc-value .unity-base-text-field__input, .dc-value .unity-float-field__input {
+    height: 24px;
+    background-color: #1C1F26;
+    border-width: 1px;
+    border-color: #2E323C;
+    border-radius: 3px;
+    color: #E6E8EC;
+    font-size: 13px;
+    -unity-text-align: middle-right;
+    padding: 0 6px;
+}
+.dc-value:focus .unity-base-text-field__input { border-color: #7D8391; }
+.dc-offset--on .dc-value .unity-base-text-field__input { border-color: #4A4226; color: #E2CE74; }
+
+/* 마지막 빌드 */
+.dc-facts { flex-direction: column; }
+.dc-fact { flex-direction: row; align-items: center; min-height: 20px; margin-bottom: 2px; }
+.dc-fact__value { flex-grow: 1; flex-shrink: 1; color: #E6E8EC; font-size: 13px; padding: 0; margin: 0; white-space: normal; }
+.dc-fact__value--gold { color: #E2CE74; }
+/* 경고: 주황 띠 + 어두운 주황 바탕 + 아이콘 — 회색 메모(dc-note)·금색 강조(--gold)와 섞여 안 읽히던 것(2026-10-22) */
+.dc-warn {
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #3A1F14;
+    border-left-width: 4px;
+    border-left-color: #FF8A4C;
+    border-radius: 3px;
+    padding: 8px 10px 8px 8px;
+    margin: 8px 0 0 0;
+}
+.dc-warn__icon { width: 18px; height: 18px; margin: 0 8px 0 0; flex-shrink: 0; }
+.dc-warn__text { flex-grow: 1; flex-shrink: 1; color: #FFE3D3; font-size: 13px; -unity-font-style: bold; white-space: normal; padding: 0; margin: 0; }
+.dc-warn__ok {
+    flex-shrink: 0;
+    height: 22px;
+    margin: -2px 0 0 8px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #FFE3D3;
+    background-color: #5A2E1C;
+    border-width: 1px;
+    border-color: #FF8A4C;
+    border-radius: 3px;
+}
+.dc-warn__ok:hover { background-color: #6E3822; color: #FFFFFF; }
+/* 확인 누른 경고: 한 줄로 접고 흐리게(내용은 마우스를 올리면) — 이미 조절한 사람에게 계속 소리치지 않게(2026-10-22) */
+.dc-warn--ok { align-items: center; background-color: #262022; border-left-color: #7A4A30; padding: 4px 8px 4px 8px; margin-top: 4px; }
+.dc-warn--ok .dc-warn__icon { opacity: 0.5; }
+.dc-warn--ok .dc-warn__text { color: #8F857F; font-size: 12px; -unity-font-style: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dc-warn--ok .dc-warn__ok { margin-top: 0; height: 20px; color: #B8A49A; background-color: #2E2628; border-color: #4A3A34; }
+.dc-fact__value--warn { color: #FF8A4C; -unity-font-style: bold; }
+.dc-note { color: #7D8391; white-space: normal; padding: 0; margin: 0; }
+.dc-note--gap { margin: 2px 0 8px 0; }
+
+/* 소개·기능 */
+.dc-intro { color: #C9CDD5; white-space: normal; padding: 0; margin: 0 0 10px 0; }
+.dc-fold__head { flex-direction: row; align-items: center; margin-bottom: 6px; }
+.dc-fold__title { font-size: 12px; letter-spacing: 1.5px; -unity-font-style: bold; color: #7D8391; padding: 0; margin: 0 6px 0 0; }
+.dc-fold__head:hover .dc-fold__title { color: #E2CE74; }
+.dc-fold__chevron { width: 10px; height: 10px; }
+.dc-features { flex-direction: column; }
+.dc-feature { flex-direction: row; align-items: flex-start; margin-bottom: 5px; }
+.dc-feature__dot { width: 4px; height: 4px; margin: 6px 9px 0 1px; background-color: #E2CE74; flex-shrink: 0; }
+.dc-feature__text { flex-grow: 1; flex-shrink: 1; white-space: normal; color: #9AA0AD; font-size: 13px; padding: 0; margin: 0; }
+
+/* 손에 든 모습 미리보기 */
+.dc-preview { margin-top: 12px; }
+.dc-preview__row { flex-direction: row; }
+.dc-preview__toggle {
+    flex-grow: 1;
+    height: 30px;
+    margin: 0;
+    border-width: 1px;
+    border-color: #4A4226;
+    border-radius: 4px;
+    background-color: #1C1F26;
+    color: #E2CE74;
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+.dc-preview__toggle:hover { border-color: #E2CE74; }
+.dc-preview__toggle--on, .dc-preview__toggle--on:hover { background-color: #E2CE74; border-color: #E2CE74; color: #15171C; }
+.dc-preview__toggle:disabled { color: #7D8391; border-color: #23262E; }
+.dc-preview__refresh { margin: 0 0 0 8px; height: 30px; }
+.dc-preview__note { font-size: 13px; margin-top: 6px; }
+
+/* 변경 기록 */
+.dc-changelog { color: #9AA0AD; font-size: 13px; white-space: normal; padding: 0; margin: 0; }
+.dc-link { color: #7D8391; font-size: 13px; padding: 0; margin: 6px 0 0 0; }
+.dc-link:hover { color: #E2CE74; }
+
+.dc-buttons { flex-direction: row; margin-top: 10px; }
+.dc-button {
+    height: 28px;
+    margin: 0 8px 0 0;
+    padding: 0 14px;
+    border-width: 1px;
+    border-color: #2E323C;
+    border-radius: 4px;
+    background-color: #1C1F26;
+    color: #E6E8EC;
+    font-size: 14px;
+}
+.dc-button:hover { border-color: #E2CE74; color: #E2CE74; }
+.dc-button:active { background-color: #2A2618; }
+.dc-button:disabled { color: #7D8391; border-color: #23262E; }
+
+/* 캔 전용: 프리셋 묶음(5칸)은 글이 길어 작게 · 라벨 텍스처·색 칸 · 모금 수 −/+ */
+.dc-seg--small .dc-seg__item { font-size: 12px; flex-basis: auto; padding: 0 4px; }
+.dc-row--stack { flex-direction: column; align-items: stretch; }
+.dc-row--stack .dc-label { width: auto; margin-bottom: 4px; }
+.dc-field { flex-grow: 1; flex-shrink: 1; min-width: 0; margin: 0; }
+.dc-field .unity-object-field__input, .dc-field .unity-color-field__input {
+    height: 24px;
+    background-color: #1C1F26;
+    border-width: 1px;
+    border-color: #2E323C;
+    border-radius: 3px;
+    color: #E6E8EC;
+}
+.dc-field-row { flex-direction: row; align-items: center; min-width: 0; }
+.dc-row__control { min-width: 0; }
+.dc-field-row .dc-button { margin: 0 0 0 8px; height: 24px; padding: 0 8px; flex-shrink: 0; }
+.dc-stepper { flex-direction: row; align-items: center; }
+.dc-stepper .dc-button { width: 28px; padding: 0; margin: 0; -unity-text-align: middle-center; }
+.dc-stepper__value { width: 40px; -unity-text-align: middle-center; color: #E6E8EC; font-size: 14px; -unity-font-style: bold; padding: 0; margin: 0; }
