@@ -1,6 +1,6 @@
 # Pyrite9 Drink Can
 
-Version 0.1.0 (2026-10-24)
+Version 0.1.1 (2026-10-25)
 
 A drink can gimmick for VRChat avatars. Drop the prefab into any humanoid avatar — when you build, it fits the can to that avatar's hand.
 Take it out, open the tab, drink it sip by sip and throw the empty can away.
@@ -175,6 +175,7 @@ The Console shows the warnings in English (except `Build failed`, which appears 
 
 ## Changelog
 
+- **0.1.1** (2026-10-25): Fixed the package not importing — the 0.1.0 file replaced on 2026-10-25 did nothing when imported. No changes to the can itself.
 - **0.1.0** (2026-10-24): First release.
 
 ## Notes

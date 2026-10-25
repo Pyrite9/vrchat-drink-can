@@ -2,7 +2,7 @@ namespace Pyrite9.DrinkCan
 {
     static class DrinkCanConst
     {
-        public const string Version = "0.1.0";
+        public const string Version = "0.1.1";
         public const string Prefix = "Pyrite9/DrinkCan/";
 
         // synced
