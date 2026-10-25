@@ -18,6 +18,8 @@
   <a href="Assets/Pyrite9/DrinkCan/README_ko.md">한국어</a>
 </p>
 
+https://github.com/user-attachments/assets/a186bec9-71f7-49d8-abb2-db5f9b903966
+
 ---
 
 `02 / 08`
